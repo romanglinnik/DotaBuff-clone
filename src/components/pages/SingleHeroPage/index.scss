@@ -1,0 +1,122 @@
+.hero_page{
+    .hero__container{
+        background: rgba(0, 0, 0, 0.9);
+        overflow: hidden;
+        position: relative;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        img{
+            background-repeat: no-repeat;
+            filter: blur(25px);
+            height: 125%;
+            left: -12.5%;
+            object-fit: cover;
+            opacity: 0.35;
+            position: absolute;
+            top: -12.5%;
+            width: 125%;
+        }
+        .hero-item{
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 125px inset;
+            display: flex;
+            padding: 56px;
+            position: relative;
+            .hero-icon{
+                    border-radius: 16px;
+                    border: 1px solid rgba(0, 0, 0, 0.3);
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 32px;
+                    display: block;
+                    flex-shrink: 0;
+                    height: 144px;
+                    width: 256px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            .hero-title{
+                margin: 0px 24px;
+                h1{
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                .hero-role{
+                    color: rgba(255, 255, 255, 0.87);
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    margin: 8px 0px;
+                    text-transform: uppercase;
+                }
+                span{
+                    color: rgba(255, 255, 255, 0.6);
+                    overflow-wrap: break-word;
+                }
+            }
+            .attr-container{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 50px;
+                .hero-winrate{
+                    font-size: 21px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .hero-attributes{
+                    display: flex;
+                    column-gap: 20px;
+                    .attributes{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .icon{
+                            width: 25px;
+                            height: 25px;
+                            background-repeat: no-repeat;
+                            background-size: cover;                       
+                        }
+                        .strength{
+                            background-image: url(../../img/Strength_attribute_symbol.png);
+                        }
+                        .agility{
+                            background-image: url(../../img/Agility_attribute_symbol.png);
+                        }
+                        .intelligence {
+                            background-image: url(../../img/Intelligence_attribute_symbol.png);
+                        }
+                    }
+                }
+                .hero-winrate{
+                    display: flex;
+                }
+            }
+        }
+    }
+    .hero_characteristic{
+        display: flex;
+        .characteristic_column{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0px;
+            padding: 8px;
+            .characteristic_column_cell{
+                background: rgba(0, 0, 0, 0.05);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px;
+                .cell-title{
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-right: 5px;
+                }
+            }
+            .characteristic_column_cell:nth-child(2n) {
+                background: rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}
